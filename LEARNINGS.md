@@ -1,5 +1,7 @@
 # Learnings
 
+> Start with the [README](README.md). Method details: [METHODOLOGY.md](METHODOLOGY.md). Using Ponytail: [PONYTAIL_GUIDE.md](PONYTAIL_GUIDE.md). Choosing: [DECISION_GUIDE.md](DECISION_GUIDE.md).
+
 ## 1. Experiment overview
 
 The same small React + TypeScript todo app was built twice with Claude Code (Opus 5.5) from one frozen `REQUIREMENTS.md`: once with the Ponytail v5.3.3 plugin active (`ponytail/`), and once in normal mode as a baseline (`baseline/`). Then the two builds were compared.
@@ -124,7 +126,7 @@ This is one run per build: observations, not a benchmark.
 | Git, docs, baseline setup | 32 / 34,258 | n/a |
 
 - In the build phases, the Ponytail session used about 11% more output tokens than the baseline, while producing about a third of the app + test code (98 vs 268 lines). Much of its output went into plans, review reports and explanations rather than code.
-- The Ponytail session carried more context per build call (about 86k vs 62k cached tokens), from its longer history and the injected rules.
+- The Ponytail session carried more context per build call (about 86k vs 62k cached tokens). Its longer history and the injected rules are the likely causes; they were not measured separately.
 
 ## 8. Limitations
 
