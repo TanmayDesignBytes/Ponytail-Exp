@@ -12,7 +12,6 @@ How to read this document. Each claim is tagged:
 - **Observed:** measured or seen in this experiment.
 - **User-reported:** checked by hand by the experimenter, not re-verified.
 - **Assumption:** reasoning that was not tested.
-- **Pending:** work not done yet.
 
 This is one run per build: observations, not a benchmark.
 
@@ -110,7 +109,7 @@ This is one run per build: observations, not a benchmark.
 | Should fix | UI and accessibility have no automated test | Unused Vite template README (**resolved**: removed) |
 | Nice to have | Focus lost after Delete · redundant `type="button"` | The same two · `randomUUID` limit undocumented · ~12 lines of low-value tests |
 
-**Pending:** `/ponytail-audit` on `baseline/` after it is imported into this repo.
+**`/ponytail-audit` on `baseline/` after import (Observed):** healthy, 0 Must-fix, 0 Should-fix. Its 4 Nice-to-haves match the table above: the `randomUUID` limit undocumented, focus lost after Delete, redundant `type="button"`, and two tests that can't fail on their own (~12 lines).
 
 ## 7. Model usage
 
